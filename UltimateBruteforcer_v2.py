@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding:utf-8
 #
-# Author:                Wizy
+# Author:                Thewizy
 # Date:                  28-01-2019
 # Purpose:               Find password from hashes using wordlists
 # Prerequisites:         A big wordlist and of course hashes
