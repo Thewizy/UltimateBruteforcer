@@ -62,8 +62,6 @@ def hashmethod():
 
         else:
             hashmethod_list.append(0)
-            print(" /!\ Invalid Hash: " + hash + " Found Line: < " + str(i) +" > /!\ ")
-            quit()
 
         hash_list.append(hash)
 
@@ -84,7 +82,7 @@ def wordhasher(word,hashline):
         hashedguess = hashlib.sha512(bytes(word, "utf-8")).hexdigest()
     else:
         hashedguess = "ERROR"
-        parser.error(" /!\ Invalid Hash Line: " + str(hashline + 1) + " /!\ ")  # should QUIT doesnt work now
+        result_list.append(" /!\ Invalid Hash Line: " + str(hashline + 1) + " /!\ ")
 
     return hashedguess
 
@@ -338,9 +336,9 @@ if __name__ == '__main__':
                     parser.error('A number lower or equal to 6 is required for the lenght of the numbers')
 
     if args.prog:
-        bar = Bar("<<PASSWORD TESTED>>", max=lines_wordfile)
+        print("test")
     if args.brut:
-        spinner = Spinner('Loading ')
+        print("test")
 
     if args.save:
         run = True
