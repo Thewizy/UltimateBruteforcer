@@ -116,7 +116,7 @@ def bruteforce():
         hash = hash_list[hashline]
 
         if wordhasher(word, hashline) == hash:
-            result = word + " Line " + str(hashline + 1) + ": " + hash
+            result = " Password Found: " + word + " Line " + str(hashline + 1) + ": " + hash
             result_list.append(result)
             quit = input("Password found would you like to leave the brute force?(Y)")
             if quit == "Y":
