@@ -4,4 +4,13 @@ Python is probably not the good choice to go for Bruteforce but It was a good wa
 I hope the code can help you in some way 
 It's a good program to explain to people how Bruteforce works
 
+To install the requirements:
+
+pip install -r requirements.txt
+
+or 
+
+pip3 install -r requirements.txt
+
+
 Thewizy
